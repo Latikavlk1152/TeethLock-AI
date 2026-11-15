@@ -1,37 +1,33 @@
-# 🦷 TeethLock – AI-Based Laptop Authentication using Teeth Recognition
+🦷 TeethLock – AI-Based Laptop Authentication using Teeth Recognition
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
-![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+📌 Overview
 
-## 📌 Overview
+TeethLock is an AI-powered authentication system that verifies a user's identity using teeth biometrics captured through a webcam.
 
-TeethLock is an AI-powered authentication system that verifies a user's identity using **teeth biometrics** captured through a webcam.
+Unlike traditional face recognition systems, TeethLock authenticates users based on the unique characteristics of their teeth, providing an additional biometric security layer and automated OS-level threat response (Win + L screen lock).
 
-Unlike traditional face recognition systems, TeethLock authenticates users based on the unique characteristics of their teeth, making it an additional biometric security mechanism.
+The project was developed as a Bachelor of Engineering Final Year Project.
 
-The project was developed as a **Bachelor of Engineering Final Year Project**.
+✨ Features
 
----
+User registration through webcam with a modern dark-themed GUI
 
-## ✨ Features
+Automatic teeth dataset collection (100 Region of Interest frames per user)
 
-- User registration through webcam
-- Automatic teeth dataset collection
-- Facial landmark detection using dlib
-- Teeth region extraction
-- CNN-based teeth recognition
-- Model training using transfer learning
-- Real-time authentication
-- Automatically locks Windows if authentication fails
-- Simple Tkinter GUI
+Facial landmark detection using dlib & Haar Cascades
 
----
+CNN-based teeth recognition model (built with TensorFlow/Keras)
 
-## 🏗 Project Architecture
+Model training using transfer learning
 
-```
+Real-time biometric authentication testing
+
+Automated Windows security lockdown (Win + L) on authentication failure
+
+Fully styled dark-mode Tkinter interface with custom-themed dialog boxes
+
+🏗 Project Architecture
+
 Camera
    │
    ▼
@@ -48,19 +44,16 @@ CNN Model (TensorFlow/Keras)
    │
    ▼
 Authentication
-        │
-        ├── Verified ✅
-        └── Stranger ❌ → Lock Computer
-```
+        ├── Verified ✅ -> Access Granted
+        └── Stranger ❌ -> Lock Computer (Win + L)
 
----
 
-## 📂 Project Structure
+📂 Project Structure
 
-```
 TeethLock/
 │
 ├── assets/
+│   ├── gifs/
 │   └── screenshots/
 │
 ├── dataset/
@@ -84,109 +77,122 @@ TeethLock/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-```
 
----
 
-## ⚙ Technologies Used
+⚙ Technologies Used
 
-- Python
-- TensorFlow
-- Keras
-- OpenCV
-- dlib
-- NumPy
-- Tkinter
-- PyAutoGUI
+Python (3.14)
 
----
+TensorFlow / Keras
 
-## 🚀 Installation
+OpenCV
+
+dlib
+
+Pillow (PIL)
+
+NumPy
+
+Tkinter (Custom Dark UI)
+
+PyAutoGUI
+
+🚀 Installation
 
 Clone the repository.
 
-```bash
 git clone https://github.com/yourusername/TeethLock.git
-```
+
 
 Move into the project.
 
-```bash
 cd TeethLock
-```
+
 
 Install dependencies.
 
-```bash
 pip install -r requirements.txt
-```
 
----
 
-## ▶ Running the Project
+▶ Running the Project
 
 Start the application.
 
-```bash
 python src/app_gui.py
-```
 
----
 
-## 📷 Workflow
+📷 Workflow
 
-### 1. Register User
+1. Register User
 
 Capture 100 images of the user's teeth.
 
-### 2. Train Model
+2. Train Model
 
 Train the CNN model using the captured dataset.
 
-### 3. Authenticate
+3. Authenticate
 
 Run the authentication module to verify the user.
 
----
+🎥 Live Demo & Screenshots
 
-## 📸 Screenshots
-
-### Home Screen
-
-*(Add screenshot here)*
-
-### Dataset Collection
-
-*(Add screenshot here)*
-
-### Training
-
-*(Add screenshot here)*
-
-### Authentication
-
-*(Add screenshot here)*
+End-to-End Walkthrough
 
 
+<video controls src="assets/video/Teeth-authentication.mp4" title="(Place your recorded walkthrough GIF in assets/gifs/teethlock_demo.gif)"></video>
 
-## 👩‍💻 Author
+Home Screen
 
-This repository is maintained by **Latika Kumare**.
+![alt text](assets/screenshots/homescreen.png)
+
+Dataset Collection
+
+![(Add screenshot here)](assets/screenshots/dataset.png)
+
+Training
+
+![(Add screenshot here)](assets/screenshots/training.png)
+
+Authentication
+
+![(Add screenshot here)](assets/screenshots/authentication.png)
+
+![alt text](assets/screenshots/authentication_1.png)
+
+📚 Academic Publication
+
+This project serves as the practical implementation of our research work in biometric security and computer vision. If you use or reference this work in your research, please cite our publication:
+
+> **Securing Smartphone User Authentication Using Teeth Pattern**  
+> * **Authors:** Sushil Mhetre, Shashikant V. Athawale, Latika Kumare, Sanket Lipne, and Sumeet Koli  
+> * **Journal:** *International Journal of Applied Engineering & Technology*, Vol. 5, No. 4, December 2023  
+> * **ISSN:** 2633-4828
+> * [\[DOI or Link to Paper\]](assets/research_paper/ijaet20v5-4-2023-213.pdf)
+
+
+👩‍💻 Author
+
+This repository is maintained by Latika Kumare.
 
 Originally developed as a Bachelor of Engineering Final Year Group Project.
 
-### Team Members
-- Latika Kumare
-- Sushil Mhetre
-- Sanket Lipne
-- Sumit Koli
+Team Members -
 
-## 👩‍💻 Maintainer
+*Latika Kumare
 
-This repository is maintained and enhanced by **Latika Kumare**.
+*Sushil Mhetre
+
+*Sanket Lipne
+
+*Sumit Koli
+
+👩‍💻 Maintainer
+
+This repository is maintained and enhanced by Latika Kumare.
 
 The original system was developed as a Bachelor of Engineering Final Year Group Project.
 
-## 📄 License
+📄 License
 
 This project is licensed under the MIT License.
