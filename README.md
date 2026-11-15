@@ -139,8 +139,7 @@ Run the authentication module to verify the user.
 
 End-to-End Walkthrough
 
-
-<video controls src="assets/video/Teeth-authentication.mp4" title="(Place your recorded walkthrough GIF in assets/gifs/teethlock_demo.gif)"></video>
+TEETHLOCKD/assets/video/Teeth-authentication.gif
 
 Home Screen
 
@@ -168,7 +167,7 @@ This project serves as the practical implementation of our research work in biom
 > * **Authors:** Sushil Mhetre, Shashikant V. Athawale, Latika Kumare, Sanket Lipne, and Sumeet Koli  
 > * **Journal:** *International Journal of Applied Engineering & Technology*, Vol. 5, No. 4, December 2023  
 > * **ISSN:** 2633-4828
-> * [\[DOI or Link to Paper\]](assets/research_paper/ijaet20v5-4-2023-213.pdf)
+> * [\[Link to Paper\]](assets/research_paper/ijaet20v5-4-2023-213.pdf)
 
 
 👩‍💻 Author
