@@ -139,7 +139,7 @@ Run the authentication module to verify the user.
 
 End-to-End Walkthrough
 
-TEETHLOCKD/assets/video/Teeth-authentication.gif
+![TeethLock Walkthrough](assets/video/Teeth-authentication.gif)
 
 Home Screen
 
